@@ -1,0 +1,23 @@
+{
+  "name": "@letea/functions",
+  "version": "2.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "test:output": "jest --json --outputFile=.jest-test-results.json"
+  },
+  "author": "letea",
+  "license": "ISC",
+  "export": {
+    "@jest": "./jest"
+  },
+  "dependencies": {
+    "clipboard": "^2.0.6"
+  },
+  "devDependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.10.4",
+    "@letea/useragents": "^1.0.1",
+    "jest": "^26.4.0"
+  }
+}
