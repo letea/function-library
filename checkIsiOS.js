@@ -1,9 +1,9 @@
 // local files
-import checkIsiPhone from "./checkIsiPhone";
-import checkIsiPad from "./checkIsiPad";
+const checkIsiPhone = require("./checkIsiPhone");
+const checkIsiPad = require("./checkIsiPad");
 
 const checkIsiOS = () => {
   return checkIsiPhone() || checkIsiPad();
 };
 
-export default checkIsiOS;
+module.exports = checkIsiOS;

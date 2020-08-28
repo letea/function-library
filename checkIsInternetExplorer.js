@@ -6,4 +6,4 @@ const checkIsInternetExplorer = () => {
   return !!navigator.userAgent.match(/msie|wow|\.net/i);
 };
 
-export default checkIsInternetExplorer;
+module.exports = checkIsInternetExplorer;

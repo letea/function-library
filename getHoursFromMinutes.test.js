@@ -1,8 +1,8 @@
 // local modules - jest
-import runTest from "./jest/runTest";
+const runTest = require("./jest/runTest");
 
 // local files
-import getHoursFromMinutes from "./getHoursFromMinutes";
+const getHoursFromMinutes = require("./getHoursFromMinutes");
 
 const testCases = [
   {

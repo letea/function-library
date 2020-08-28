@@ -1,6 +1,6 @@
 // local files
-import checkIsArray from "./checkIsArray";
-import getRandomIndexInArray from "./getRandomIndexInArray";
+const checkIsArray = require("./checkIsArray");
+const getRandomIndexInArray = require("./getRandomIndexInArray");
 
 const getRandomValueInArray = (array = []) => {
   if (!checkIsArray(array)) {
@@ -12,4 +12,4 @@ const getRandomValueInArray = (array = []) => {
   return index >= 0 ? array[index] : undefined;
 };
 
-export default getRandomValueInArray;
+module.exports = getRandomValueInArray;

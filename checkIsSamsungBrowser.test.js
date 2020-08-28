@@ -1,12 +1,12 @@
 // node modules
-import userAgents from "@letea/useragents";
+const userAgents = require("@letea/useragents");
 
 // local modules - jest
-import runTest from "./jest/runTest";
-import mockUserAgent from "./jest/mockUserAgent";
+const runTest = require("./jest/runTest");
+const mockUserAgent = require("./jest/mockUserAgent");
 
 // local files
-import checkIsSamsungBrowser from "./checkIsSamsungBrowser";
+const checkIsSamsungBrowser = require("./checkIsSamsungBrowser");
 
 const testCases = [
   {

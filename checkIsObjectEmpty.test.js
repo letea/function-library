@@ -1,8 +1,8 @@
 // local modules - jest
-import runTest from "./jest/runTest";
+const runTest = require("./jest/runTest");
 
 // local files
-import checkIsObjectEmpty from "./checkIsObjectEmpty";
+const checkIsObjectEmpty = require("./checkIsObjectEmpty");
 
 const testCases = [
   {

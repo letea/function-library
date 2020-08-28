@@ -1,6 +1,6 @@
 {
   "name": "@letea/functions",
-  "version": "2.0.1",
+  "version": "2.0.3",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -16,8 +16,16 @@
     "clipboard": "^2.0.6"
   },
   "devDependencies": {
-    "@babel/plugin-transform-modules-commonjs": "^7.10.4",
     "@letea/useragents": "^1.0.1",
+    "eslint": "^7.7.0",
+    "eslint-plugin-jest": "^23.20.0",
     "jest": "^26.4.0"
+  },
+  "prettier": {
+    "arrowParens": "avoid",
+    "semi": true,
+    "singleQuote": false,
+    "tabWidth": 2,
+    "trailingComma": "none"
   }
 }

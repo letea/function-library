@@ -6,4 +6,4 @@ const checkIsiPhone = () => {
   return !!navigator.userAgent.match(/iphone/i);
 };
 
-export default checkIsiPhone;
+module.exports = checkIsiPhone;

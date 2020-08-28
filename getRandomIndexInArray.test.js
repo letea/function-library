@@ -1,8 +1,8 @@
 // local modules - jest
-import runTest from "./jest/runTest";
+const runTest = require("./jest/runTest");
 
 // local files
-import getRandomIndexInArray from "./getRandomIndexInArray";
+const getRandomIndexInArray = require("./getRandomIndexInArray");
 
 const exampleArray = ["a", "b", "c", "d", "e"];
 

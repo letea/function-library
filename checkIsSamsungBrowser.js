@@ -6,4 +6,4 @@ const checkIsSamsungBrowser = () => {
   return !!navigator.userAgent.match(/samsungbrowser/i);
 };
 
-export default checkIsSamsungBrowser;
+module.exports = checkIsSamsungBrowser;

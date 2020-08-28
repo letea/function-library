@@ -1,5 +1,5 @@
 // local files
-import getURLWithoutTrackingParameters from "./getURLWithoutTrackingParameters";
+const getURLWithoutTrackingParameters = require("./getURLWithoutTrackingParameters");
 
 const defaultProps = {
   hasSearch: true,
@@ -21,4 +21,4 @@ const getCurrentURL = (props = defaultProps) => {
   return href;
 };
 
-export default getCurrentURL;
+module.exports = getCurrentURL;

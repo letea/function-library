@@ -1,8 +1,8 @@
 // local modules - jest
-import runTest from "./jest/runTest";
+const runTest = require("./jest/runTest");
 
 // local files
-import getIntersectionArray from "./getIntersectionArray";
+const getIntersectionArray = require("./getIntersectionArray");
 
 const array1 = ["a", "b", "c"];
 const array2 = ["b", "c", "d", "e", "f"];

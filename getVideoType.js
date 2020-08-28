@@ -1,5 +1,5 @@
 // local files
-import checkIsString from "./checkIsString";
+const checkIsString = require("./checkIsString");
 
 const getVideoType = src => {
   if (!checkIsString(src)) {
@@ -16,4 +16,4 @@ const getVideoType = src => {
   return type ? `${prefix}/${type}` : "";
 };
 
-export default getVideoType;
+module.exports = getVideoType;

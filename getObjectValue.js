@@ -1,5 +1,5 @@
 // local files
-import checkIsObject from "./checkIsObject";
+const checkIsObject = require("./checkIsObject");
 
 const defaultProps = {
   object: {},
@@ -33,4 +33,4 @@ const getObjectValue = (props = defaultProps) => {
   }
 };
 
-export default getObjectValue;
+module.exports = getObjectValue;

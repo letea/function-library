@@ -1,6 +1,6 @@
 // local files
-import checkIsiOS from "./checkIsiOS";
-import checkIsAndroid from "./checkIsAndroid";
+const checkIsiOS = require("./checkIsiOS");
+const checkIsAndroid = require("./checkIsAndroid");
 
 const checkIsMobile = () => {
   if (!window || !navigator) {
@@ -10,4 +10,4 @@ const checkIsMobile = () => {
   return checkIsiOS() || checkIsAndroid();
 };
 
-export default checkIsMobile;
+module.exports = checkIsMobile;

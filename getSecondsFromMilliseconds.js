@@ -1,5 +1,5 @@
 // local files
-import checkIsNumber from "./checkIsNumber";
+const checkIsNumber = require("./checkIsNumber");
 
 const getSecondsFromMilliseconds = milliseconds => {
   if (!checkIsNumber(milliseconds)) {
@@ -9,4 +9,4 @@ const getSecondsFromMilliseconds = milliseconds => {
   return milliseconds / 1000;
 };
 
-export default getSecondsFromMilliseconds;
+module.exports = getSecondsFromMilliseconds;

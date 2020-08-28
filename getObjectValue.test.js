@@ -1,8 +1,8 @@
 // local modules - jest
-import runTest from "./jest/runTest";
+const runTest = require("./jest/runTest");
 
 // local files
-import getObjectValue from "./getObjectValue";
+const getObjectValue = require("./getObjectValue");
 
 const example = {
   a: 1,

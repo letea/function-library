@@ -1,6 +1,6 @@
 // local files
-import checkIsObject from "./checkIsObject";
-import checkIsObjectEmpty from "./checkIsObjectEmpty";
+const checkIsObject = require("./checkIsObject");
+const checkIsObjectEmpty = require("./checkIsObjectEmpty");
 
 const getSearchFromParameters = (parameters = {}) => {
   if (!checkIsObject(parameters)) {
@@ -21,4 +21,4 @@ const getSearchFromParameters = (parameters = {}) => {
   return search;
 };
 
-export default getSearchFromParameters;
+module.exports = getSearchFromParameters;

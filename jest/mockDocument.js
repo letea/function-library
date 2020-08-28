@@ -16,4 +16,4 @@ const mockDocument = props => {
   });
 };
 
-export default mockDocument;
+module.exports = mockDocument;

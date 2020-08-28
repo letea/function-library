@@ -1,4 +1,4 @@
 // local files
-import checkIsWindowFocused from "./checkIsWindowFocused";
+const checkIsWindowFocused = require("./checkIsWindowFocused");
 
 test.todo("mock document");

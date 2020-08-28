@@ -1,5 +1,5 @@
 // local files
-import checkIsArray from "./checkIsArray";
+const checkIsArray = require("./checkIsArray");
 
 const getRandomIndexInArray = (array = []) => {
   if (!checkIsArray(array)) {
@@ -13,4 +13,4 @@ const getRandomIndexInArray = (array = []) => {
   return Math.floor(Math.random() * array.length);
 };
 
-export default getRandomIndexInArray;
+module.exports = getRandomIndexInArray;

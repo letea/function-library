@@ -1,6 +1,6 @@
 // local files
-import checkIsWindows from "./checkIsWindows";
-import checkIsMac from "./checkIsMac";
+const checkIsWindows = require("./checkIsWindows");
+const checkIsMac = require("./checkIsMac");
 
 const checkIsDesktop = () => {
   if (!window || !navigator) {
@@ -10,4 +10,4 @@ const checkIsDesktop = () => {
   return checkIsWindows() || checkIsMac();
 };
 
-export default checkIsDesktop;
+module.exports = checkIsDesktop;

@@ -28,4 +28,4 @@ const runTest = ({ testCases, handler }) => {
   });
 };
 
-export default runTest;
+module.exports = runTest;

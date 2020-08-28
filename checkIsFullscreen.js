@@ -8,4 +8,4 @@ const checkIsFullscreen = () => {
   );
 };
 
-export default checkIsFullscreen;
+module.exports = checkIsFullscreen;

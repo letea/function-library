@@ -4,4 +4,4 @@ const getAndroidVersion = () => {
   return match ? match[1] : "";
 };
 
-export default getAndroidVersion;
+module.exports = getAndroidVersion;

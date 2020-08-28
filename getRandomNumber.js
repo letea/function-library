@@ -1,5 +1,5 @@
 // local files
-import checkIsNumber from "./checkIsNumber";
+const checkIsNumber = require("./checkIsNumber");
 
 const defaultProps = {
   maxNumber: 0,
@@ -30,4 +30,4 @@ const getRandomNumber = (props = defaultProps) => {
   return isFloat ? number : Math.round(number);
 };
 
-export default getRandomNumber;
+module.exports = getRandomNumber;

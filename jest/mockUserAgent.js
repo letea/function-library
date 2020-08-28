@@ -9,4 +9,4 @@ const mockUserAgent = value => {
   });
 };
 
-export default mockUserAgent;
+module.exports = mockUserAgent;

@@ -6,4 +6,4 @@ const checkIsFirefox = () => {
   return !!navigator.userAgent.match(/firefox|fxios/i);
 };
 
-export default checkIsFirefox;
+module.exports = checkIsFirefox;

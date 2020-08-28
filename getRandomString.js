@@ -1,6 +1,6 @@
 // local files
-import checkIsNumber from "./checkIsNumber";
-import checkIsInteger from "./checkIsInteger";
+const checkIsNumber = require("./checkIsNumber");
+const checkIsInteger = require("./checkIsInteger");
 
 const getRandomString = (length = 3) => {
   if (!checkIsNumber(length) || !checkIsInteger(length) || length < 1) {
@@ -18,4 +18,4 @@ const getRandomString = (length = 3) => {
   return text;
 };
 
-export default getRandomString;
+module.exports = getRandomString;

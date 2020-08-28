@@ -1,5 +1,5 @@
 // local files
-import checkIsString from "./checkIsString";
+const checkIsString = require("./checkIsString");
 
 const getURLWithoutParameters = (url = "") => {
   if (!checkIsString(url)) {
@@ -15,4 +15,4 @@ const getURLWithoutParameters = (url = "") => {
   return url.slice(0, url.indexOf("?"));
 };
 
-export default getURLWithoutParameters;
+module.exports = getURLWithoutParameters;

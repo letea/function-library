@@ -1,9 +1,9 @@
 // local modules - jest
-import runTest from "./jest/runTest";
-import mockDocument from "./jest/mockDocument";
+const runTest = require("./jest/runTest");
+const mockDocument = require("./jest/mockDocument");
 
 // local files
-import checkIsFullscreen from "./checkIsFullscreen";
+const checkIsFullscreen = require("./checkIsFullscreen");
 
 const preMockDocument = () => {
   const attributes = ["fullScreen", "mozFullScreen", "webkitIsFullScreen"];

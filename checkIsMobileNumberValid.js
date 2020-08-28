@@ -1,5 +1,5 @@
 // local files
-import checkIsString from "./checkIsString";
+const checkIsString = require("./checkIsString");
 
 const checkIsMobileNumberValid = (mobileNumber = "") => {
   if (!checkIsString(mobileNumber)) {
@@ -15,4 +15,4 @@ const checkIsMobileNumberValid = (mobileNumber = "") => {
   );
 };
 
-export default checkIsMobileNumberValid;
+module.exports = checkIsMobileNumberValid;

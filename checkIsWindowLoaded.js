@@ -2,4 +2,4 @@ const checkIsWindowLoaded = () => {
   return document.readyState === "complete";
 };
 
-export default checkIsWindowLoaded;
+module.exports = checkIsWindowLoaded;

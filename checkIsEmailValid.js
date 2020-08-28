@@ -1,5 +1,5 @@
 // local modules - functions
-import checkIsString from "./checkIsString";
+const checkIsString = require("./checkIsString");
 
 const checkIsEmailValid = (email = "") => {
   if (!checkIsString(email)) {
@@ -11,7 +11,7 @@ const checkIsEmailValid = (email = "") => {
   );
 };
 
-export default checkIsEmailValid;
+module.exports = checkIsEmailValid;
 
 /* 
   Reference:

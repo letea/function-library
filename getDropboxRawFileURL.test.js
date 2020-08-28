@@ -1,8 +1,8 @@
 // local modules - jest
-import runTest from "./jest/runTest";
+const runTest = require("./jest/runTest");
 
 // local files
-import getDropboxRawFileURL from "./getDropboxRawFileURL";
+const getDropboxRawFileURL = require("./getDropboxRawFileURL");
 
 const testCases = [
   {

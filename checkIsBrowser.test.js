@@ -1,4 +1,4 @@
 // local files
-import checkIsBrowser from "./checkIsBrowser";
+const checkIsBrowser = require("./checkIsBrowser");
 
 test.todo("mock window and document");

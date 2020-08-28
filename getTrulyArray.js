@@ -1,5 +1,5 @@
 // local modules - functions
-import checkIsArray from "./checkIsArray";
+const checkIsArray = require("./checkIsArray");
 
 const getTrulyArray = (array = []) => {
   if (!checkIsArray(array)) {
@@ -10,4 +10,4 @@ const getTrulyArray = (array = []) => {
   return array.filter(Boolean);
 };
 
-export default getTrulyArray;
+module.exports = getTrulyArray;

@@ -13,4 +13,4 @@ const getiOSVersion = () => {
   return "";
 };
 
-export default getiOSVersion;
+module.exports = getiOSVersion;

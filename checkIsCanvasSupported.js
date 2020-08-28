@@ -3,4 +3,4 @@ const checkIsCanvasSupported = () => {
   return !!(element.getContext && element.getContext("2d"));
 };
 
-export default checkIsCanvasSupported;
+module.exports = checkIsCanvasSupported;
