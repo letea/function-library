@@ -3,10 +3,10 @@ const userAgents = require("@letea/useragents");
 
 // local modules - jest
 const runTest = require("./jest/runTest");
-const mockUserAgent = require("./jest/mockUserAgent");
 
 // local files
 const checkIsDesktop = require("./checkIsDesktop");
+const setUserAgent = require("./setUserAgent");
 
 const testCases = [
   {
@@ -28,7 +28,7 @@ const testCases = [
 ];
 
 const handler = ({ testCase, item }) => {
-  mockUserAgent(item.userAgent);
+  setUserAgent(item.userAgent);
   expect(checkIsDesktop()).toBe(testCase.toBe);
 };
 

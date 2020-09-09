@@ -1,14 +1,14 @@
 // local modules - jest
 const runTest = require("./jest/runTest");
-const mockDocument = require("./jest/mockDocument");
 
 // local files
 const checkIsFullscreen = require("./checkIsFullscreen");
+const setDocumentAttribute = require("./setDocumentAttribute");
 
-const preMockDocument = () => {
+const presetDocumentAttribute = () => {
   const attributes = ["fullScreen", "mozFullScreen", "webkitIsFullScreen"];
   attributes.forEach(attribute => {
-    mockDocument({
+    setDocumentAttribute({
       attribute,
       value: false
     });
@@ -52,9 +52,9 @@ const testCases = [
 ];
 
 const handler = ({ testCase, item }) => {
-  preMockDocument();
+  presetDocumentAttribute();
   item &&
-    mockDocument({
+    setDocumentAttribute({
       attribute: item,
       value: true
     });

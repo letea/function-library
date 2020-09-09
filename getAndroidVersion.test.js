@@ -3,10 +3,10 @@ const userAgents = require("@letea/useragents");
 
 // local modules - jest
 const runTest = require("./jest/runTest");
-const mockUserAgent = require("./jest/mockUserAgent");
 
 // local files
 const getAndroidVersion = require("./getAndroidVersion");
+const setUserAgent = require("./setUserAgent");
 
 const testCases = [
   {
@@ -16,7 +16,7 @@ const testCases = [
       return userAgent.os === "android";
     }),
     handler: ({ item }) => {
-      mockUserAgent(item.userAgent);
+      setUserAgent(item.userAgent);
       expect(getAndroidVersion()).toBe(item.osVersion);
     }
   },
@@ -27,7 +27,7 @@ const testCases = [
       return userAgent.os !== "android";
     }),
     handler: ({ item }) => {
-      mockUserAgent(item.userAgent);
+      setUserAgent(item.userAgent);
       expect(getAndroidVersion()).toBe("");
     }
   }

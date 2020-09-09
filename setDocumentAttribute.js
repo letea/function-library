@@ -3,7 +3,7 @@ const defaultProps = {
   value: ""
 };
 
-const mockDocument = props => {
+const setDocumentAttribute = props => {
   if (!window || !document) {
     throw new Error("No window or document founded.");
   }
@@ -16,4 +16,4 @@ const mockDocument = props => {
   });
 };
 
-module.exports = mockDocument;
+module.exports = setDocumentAttribute;
