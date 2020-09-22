@@ -11,6 +11,10 @@ const runHandler = ({ testCase, item, handler }) => {
 };
 
 const runTest = ({ testCases, handler }) => {
+  if (process.browser) {
+    return;
+  }
+
   testCases.forEach(testCase => {
     describe(testCase.describe, () => {
       if (testCase.cases) {
