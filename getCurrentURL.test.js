@@ -56,3 +56,7 @@ const testCases = [
 ];
 
 runTest({ testCases });
+
+module.exports = {
+  testCases
+};

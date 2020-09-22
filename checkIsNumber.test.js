@@ -24,3 +24,8 @@ const handler = ({ testCase, item }) => {
 };
 
 runTest({ testCases, handler });
+
+module.exports = {
+  testCases,
+  handler
+};
