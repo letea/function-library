@@ -4,13 +4,13 @@ const runTest = require("./jest/runTest");
 // local files
 const getRandomIndexInArray = require("./getRandomIndexInArray");
 
-const exampleArray = ["a", "b", "c", "d", "e"];
-
 const testCases = [
   {
     describe: "should return an index",
     it: "from exampleArray",
     handler: () => {
+      const exampleArray = ["a", "b", "c", "d", "e"];
+
       for (let i = 0; i < 100; i++) {
         const index = getRandomIndexInArray(exampleArray);
         expect(index).toBeGreaterThanOrEqual(0);
