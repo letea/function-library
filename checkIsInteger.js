@@ -3,7 +3,7 @@ const checkIsNumber = require("./checkIsNumber");
 
 const checkIsInteger = value => {
   if (checkIsNumber(value)) {
-    return value % 1 === 0;
+    return Number.isInteger(value);
   }
   return false;
 };
