@@ -14,7 +14,7 @@ const testCases = [
           array1: ["a", "b", "c"],
           array2: ["b", "c", "d", "e", "f"]
         })
-      ).toEqual(expect.arrayContaining(["b", "c"]));
+      ).toMatchObject(["b", "c"]);
     }
   },
   {
@@ -23,16 +23,16 @@ const testCases = [
     handler: () => {
       expect(
         getIntersectionArray({ array1: ["a", "b", "c"], array2: [] })
-      ).toEqual(expect.arrayContaining([]));
+      ).toMatchObject([]);
 
       expect(
         getIntersectionArray({
           array1: ["a", "b", "c"],
           array2: "This is a string."
         })
-      ).toEqual(expect.arrayContaining([]));
+      ).toMatchObject([]);
 
-      expect(getIntersectionArray()).toEqual(expect.arrayContaining([]));
+      expect(getIntersectionArray()).toMatchObject([]);
     }
   }
 ];
