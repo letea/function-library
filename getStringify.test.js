@@ -32,9 +32,7 @@ const testCases = [
   {
     describe: "should return a string",
     it: "if the argument is a function",
-    toBe: `() => {
-    console.log(123);
-  }`,
+    toBe: "()=>{console.log(123);}",
     cases: [
       () => {
         console.log(123);
