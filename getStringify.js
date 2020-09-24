@@ -1,11 +1,14 @@
+// node modules
 const checkIsArray = require("./checkIsArray");
 const checkIsObject = require("./checkIsObject");
+const checkIsString = require("./checkIsString");
+const checkIsFunction = require("./checkIsFunction");
 
 function getStringifyFromObject(parameter = {}) {
   let result = "";
 
   Object.keys(parameter).forEach((key, index, array) => {
-    if (typeof parameter[key] === "string") {
+    if (checkIsString(parameter[key])) {
       result += `${key}: "${getStringify(parameter[key])}"`;
     } else {
       result += `${key}: ${getStringify(parameter[key])}`;
@@ -23,7 +26,7 @@ function getStringifyFromArray(parameter = []) {
   let result = "";
 
   parameter.forEach((item, index, array) => {
-    if (typeof item === "string") {
+    if (checkIsString(item)) {
       result += `"${getStringify(item)}"`;
     } else {
       result += getStringify(item);
@@ -47,7 +50,7 @@ function getStringify(parameter) {
     } else if (checkIsObject(parameter)) {
       // object to string
       result += getStringifyFromObject(parameter);
-    } else if (typeof parameter === "function") {
+    } else if (checkIsFunction(parameter)) {
       // function to string
       result += parameter.toString();
     } else {
