@@ -13,7 +13,7 @@ const testCases = [
   },
   {
     describe: "should return false",
-    it: "if the argument isn't an string",
+    it: "if the argument isn't a string",
     toBe: false,
     cases: [null, undefined, NaN, Infinity, 123, [], {}]
   }

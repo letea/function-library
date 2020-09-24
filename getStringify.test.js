@@ -25,7 +25,7 @@ const testCases = [
   },
   {
     describe: "should return a string",
-    it: "if the argument is an string",
+    it: "if the argument is a string",
     toBe: "Hello",
     cases: ["Hello"]
   },
