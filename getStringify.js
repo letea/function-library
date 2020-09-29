@@ -52,7 +52,9 @@ function getStringify(parameter) {
       result += getStringifyFromObject(parameter);
     } else if (checkIsFunction(parameter)) {
       // function to string
-      result += parameter.toString().replace(/\n|\r|((?<!(const)|let|var) )/g, "");
+      result += parameter
+        .toString()
+        .replace(/\n|\r|((?<!(const)|let|var|typeof) )/g, "");
     } else if (checkIsString(parameter) && parameter) {
       // string to string
       result += parameter.replace(/"/g, '\\"');
