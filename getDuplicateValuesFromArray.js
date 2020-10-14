@@ -8,18 +8,18 @@ const getDuplicateValuesFromArray = (array = []) => {
   }
 
   const duplicateValues = [];
-  array.forEach((item) => {
+  array.forEach(item => {
     let count = 0;
-    array.forEach((otherItem) => {
+    array.forEach(otherItem => {
       if (item === otherItem) {
         count += 1;
       }
-    })
+    });
     if (count > 1) {
       duplicateValues.push(item);
     }
   });
   return getUniqueArray(duplicateValues);
-}
+};
 
 module.exports = getDuplicateValuesFromArray;

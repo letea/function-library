@@ -1,4 +1,4 @@
-function getTraditionalChinese(text = ""){
+function getTraditionalChinese(text = "") {
   const simpleToTraditionalChineseDictionary = {
     "\u00b7":"\u2027",
     "\u2015":"\u2500",
@@ -2537,12 +2537,12 @@ function getTraditionalChinese(text = ""){
     "\u9f9b":"\u9f95",
     "\u9f9f":"\u9f9c",
     "\ue5f1":"\u3000"
-  }
+  };
 
-  text = text.replace(/[^\x00-\xFF]/g, (word) => {
-    return (word in simpleToTraditionalChineseDictionary) ? 
-      simpleToTraditionalChineseDictionary[word] : 
-      word;
+  text = text.replace(/[^\x00-\xFF]/g, word => {
+    return word in simpleToTraditionalChineseDictionary
+      ? simpleToTraditionalChineseDictionary[word]
+      : word;
   });
 
   return text;

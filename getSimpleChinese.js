@@ -2902,12 +2902,12 @@ function getSimpleChinese(text = "") {
     "\ufe6b":"\uff20",
     "\u300C":"\u300C",
     "\u300D":"\u300D"
-  }
+  };
 
-  text = text.replace(/[^\x00-\xFF]/g, (word) => {
-    return (word in traditionalToSimpleChineseDictionary) ? 
-      traditionalToSimpleChineseDictionary[word] : 
-      word;
+  text = text.replace(/[^\x00-\xFF]/g, word => {
+    return word in traditionalToSimpleChineseDictionary
+      ? traditionalToSimpleChineseDictionary[word]
+      : word;
   });
 
   return text;

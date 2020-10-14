@@ -14,7 +14,7 @@ const testCases = [
       const shuffledArray = getShuffleArray(item);
       expect(checkIsArray(shuffledArray)).toBe(true);
       expect(shuffledArray.length).toBe(item.length);
-      item.forEach((childItem) => {
+      item.forEach(childItem => {
         expect(shuffledArray.includes(childItem)).toBe(true);
       });
     }

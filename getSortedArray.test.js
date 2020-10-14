@@ -9,7 +9,10 @@ const testCases = [
     describe: "should return an sorted array",
     it: "if the argument is valid.",
     toBe: [1, 2, 2, 3, 3, 5],
-    cases: [[1, 2, 3, 2, 3, 5], [5, 1, 3, 2, 3, 2]]
+    cases: [
+      [1, 2, 3, 2, 3, 5],
+      [5, 1, 3, 2, 3, 2]
+    ]
   }
 ];
 
