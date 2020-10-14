@@ -2,7 +2,6 @@
 const runTest = require("./jest/runTest");
 
 // local files
-const checkIsArray = require("./checkIsArray");
 const getShuffleArray = require("./getShuffleArray");
 
 const testCases = [
@@ -12,7 +11,7 @@ const testCases = [
     cases: [[5, 4, 3, 2, 1]],
     handler: ({ testCase, item }) => {
       const shuffledArray = getShuffleArray(item);
-      expect(checkIsArray(shuffledArray)).toBe(true);
+      expect(Array.isArray(shuffledArray)).toBe(true);
       expect(shuffledArray.length).toBe(item.length);
       item.forEach(childItem => {
         expect(shuffledArray.includes(childItem)).toBe(true);
