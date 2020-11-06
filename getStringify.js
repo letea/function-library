@@ -54,7 +54,11 @@ function getStringify(parameter) {
       // function to string
       result += parameter
         .toString()
-        .replace(/\n|\r|((?<!(const)|let|var|typeof) )/g, "");
+        .replace(/\s+(?=(?:(?:[^"]*"){2})*[^"]*"[^"]*$)/g, "___") // handle whitespace in quotes
+        .replace(/(const|let|var|typeof)[\s]+/g, "$1___") // handle whitespace between declare and variable
+        .replace(/\n|\r|\s/g, "")
+        .replace(/___/g, " ");
+      // .replace(/\n|\r|((?<!(const)|let|var|typeof) )/g, ""); // is not working with safari - 2020.11.06
     } else if (checkIsString(parameter) && parameter) {
       // string to string
       result += parameter.replace(/"/g, '\\"');

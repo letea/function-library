@@ -33,12 +33,12 @@ const testCases = [
     describe: "should return a string",
     it: "if the argument is a function",
     toBe:
-      '()=>{const a=123;let b=null;var c="Hello";console.log(typeof a);console.log(a,b,c);}',
+      '()=>{const a=123;let b=null;var c="Hello World";console.log(typeof a);console.log(a,b,c);}',
     cases: [
       () => {
         const a = 123;
         let b = null;
-        var c = "Hello";
+        var c = "Hello World";
         console.log(typeof a);
         console.log(a, b, c);
       }
