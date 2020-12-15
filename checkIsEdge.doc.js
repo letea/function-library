@@ -10,5 +10,6 @@ module.exports = {
     checkIsEdge();
     // false
   `,
+  isBrowserOnly: true,
   kind: "User-Agent"
 };

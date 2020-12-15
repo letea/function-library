@@ -10,5 +10,6 @@ module.exports = {
     checkIsFullscreen();
     // false
   `,
+  isBrowserOnly: true,
   kind: "Window"
 };

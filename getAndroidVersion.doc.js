@@ -11,5 +11,6 @@ module.exports = {
     getAndroidVersion();
     // ""
   `,
+  isBrowserOnly: true,
   kind: "User-Agent"
 };

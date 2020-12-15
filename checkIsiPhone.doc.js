@@ -10,5 +10,6 @@ module.exports = {
     checkIsiPhone();
     // false
   `,
+  isBrowserOnly: true,
   kind: "User-Agent"
 };

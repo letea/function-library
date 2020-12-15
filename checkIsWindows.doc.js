@@ -10,5 +10,6 @@ module.exports = {
     checkIsWindows();
     // false
   `,
+  isBrowserOnly: true,
   kind: "User-Agent"
 };

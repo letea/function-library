@@ -5,5 +5,6 @@ module.exports = {
     checkIsWindowLoaded();
     // true
   `,
+  isBrowserOnly: true,
   kind: "Window"
 };

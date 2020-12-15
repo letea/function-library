@@ -11,5 +11,6 @@ module.exports = {
     getiOSVersion();
     // ""
   `,
+  isBrowserOnly: true,
   kind: "User-Agent"
 };

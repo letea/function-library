@@ -18,5 +18,6 @@ module.exports = {
     checkIsInternetExplorer();
     // false
   `,
+  isBrowserOnly: true,
   kind: "User-Agent"
 };

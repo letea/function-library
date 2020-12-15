@@ -10,5 +10,6 @@ module.exports = {
     checkIsSafari();
     // false
   `,
+  isBrowserOnly: true,
   kind: "User-Agent"
 };

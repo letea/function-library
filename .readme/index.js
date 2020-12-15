@@ -74,6 +74,23 @@ const main = async () => {
           )}\n\`\`\`\n`;
         }
 
+        // notes
+        if (item.notes) {
+          readMe += "### notes\n";
+          item.notes.forEach(note => {
+            readMe += `- ${note}\n`;
+          });
+        }
+
+        // browser only
+        if (item.isBrowserOnly) {
+          if (!item.notes) {
+            readMe += "### notes\n";
+          }
+
+          readMe += "- Only work on browsers.\n";
+        }
+
         // references
         if (item.references) {
           readMe += "### references\n";

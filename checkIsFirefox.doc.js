@@ -10,5 +10,6 @@ module.exports = {
     checkIsFirefox();
     // false
   `,
+  isBrowserOnly: true,
   kind: "User-Agent"
 };

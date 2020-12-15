@@ -10,5 +10,6 @@ module.exports = {
     checkIsMac();
     // false
   `,
+  isBrowserOnly: true,
   kind: "User-Agent"
 };

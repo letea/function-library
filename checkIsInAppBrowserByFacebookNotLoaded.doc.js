@@ -6,5 +6,6 @@ module.exports = {
     checkIsInAppBrowserByFacebookNotLoaded();
     // true
   `,
+  isBrowserOnly: true,
   kind: "Browser"
 };

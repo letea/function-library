@@ -11,5 +11,6 @@ module.exports = {
       url: "https://developer.mozilla.org/en-US/docs/Web/API/Document/hasFocus"
     }
   ],
+  isBrowserOnly: true,
   kind: "Window"
 };

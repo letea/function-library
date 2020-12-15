@@ -11,5 +11,6 @@ module.exports = {
     // false
   `,
   references: [{ title: "clipboard.js", url: "https://clipboardjs.com/" }],
+  isBrowserOnly: true,
   kind: "Window"
 };

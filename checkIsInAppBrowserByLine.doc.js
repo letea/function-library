@@ -11,5 +11,6 @@ module.exports = {
     checkIsInAppBrowserByLine();
     // false
   `,
+  isBrowserOnly: true,
   kind: "User-Agent"
 };

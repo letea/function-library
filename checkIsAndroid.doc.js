@@ -10,5 +10,6 @@ module.exports = {
     checkIsAndroid();
     // false
   `,
+  isBrowserOnly: true,
   kind: "User-Agent"
 };

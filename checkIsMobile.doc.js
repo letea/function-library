@@ -14,5 +14,6 @@ module.exports = {
     checkIsMobile();
     // false
   `,
+  isBrowserOnly: true,
   kind: "User-Agent"
 };

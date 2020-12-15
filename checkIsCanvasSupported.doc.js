@@ -5,5 +5,6 @@ module.exports = {
     checkIsCanvasSupported();
     // true
   `,
+  isBrowserOnly: true,
   kind: "Canvas"
 };

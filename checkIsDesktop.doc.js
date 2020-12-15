@@ -14,5 +14,6 @@ module.exports = {
     checkIsDesktop();
     // false
   `,
+  isBrowserOnly: true,
   kind: "User-Agent"
 };

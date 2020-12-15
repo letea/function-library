@@ -11,5 +11,6 @@ module.exports = {
     checkIsInAppBrowserByFacebook();
     // false
   `,
+  isBrowserOnly: true,
   kind: "User-Agent"
 };

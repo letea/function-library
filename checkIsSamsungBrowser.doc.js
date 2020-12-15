@@ -10,5 +10,6 @@ module.exports = {
     checkIsSamsugnBrowser();
     // false
   `,
+  isBrowserOnly: true,
   kind: "User-Agent"
 };
