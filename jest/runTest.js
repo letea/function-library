@@ -11,7 +11,7 @@ const runHandler = ({ testCase, item, handler }) => {
 };
 
 const runTest = ({ testCases, handler }) => {
-  if (process.browser) {
+  if (process.browser || typeof describe === "undefined") {
     return;
   }
 

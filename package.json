@@ -17,9 +17,11 @@
   },
   "devDependencies": {
     "@letea/useragents": "^1.0.1",
+    "@quilicicf/markdown-formatter": "^3.0.2",
     "eslint": "^7.7.0",
     "eslint-plugin-jest": "^23.20.0",
-    "jest": "^26.4.0"
+    "jest": "^26.4.0",
+    "prettier": "^2.2.1"
   },
   "prettier": {
     "arrowParens": "avoid",
