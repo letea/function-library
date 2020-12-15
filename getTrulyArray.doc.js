@@ -10,7 +10,6 @@ module.exports = {
     getTrulyArray(array);
     // ["test", 9, true, Infinity, {}, []]
   `,
-
   notes: ["Infinity is a true value."],
   references: [
     {

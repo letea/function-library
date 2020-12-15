@@ -22,8 +22,6 @@ documents.forEach(document => {
   }
 });
 
-console.log(groupedDocuments);
-
 const jsFormat = (content = "") => {
   return prettier.format(content, {
     semi: true,
@@ -47,41 +45,49 @@ const main = async () => {
   readMe += `\`\`\`bash\nnpm install @letea/functions\n\`\`\`\n`;
 
   // Functions
-  Object.keys(groupedDocuments).forEach(key => {
-    // Kind
-    readMe += `# ${key}\n`;
+  Object.keys(groupedDocuments)
+    .sort()
+    .forEach(key => {
+      // Kind
+      readMe += `# ${key}\n`;
 
-    groupedDocuments[key].forEach(item => {
-      // title
-      readMe += `## ${item.title}\n`;
+      groupedDocuments[key].forEach(item => {
+        // title
+        readMe += `## ${item.title}\n`;
 
-      // description
-      readMe += `${item.description}\n`;
+        // description
+        if (item.description) {
+          readMe += `${item.description}\n`;
+        }
 
-      // arguments
-      readMe += "### arguments\n";
-      readMe += `\`\`\`js\n${jsFormat(item.arguments)}\n\`\`\`\n`;
+        // arguments
+        if (item.arguments) {
+          readMe += "### arguments\n";
+          readMe += `\`\`\`js\n${jsFormat(item.arguments)}\n\`\`\`\n`;
+        }
 
-      // usage
-      readMe += "### usage\n";
-      readMe += `\`\`\`js\n${jsFormat(
-        `import ${item.title} from "@letea/function/${item.title}";\n${item.usage}`
-      )}\n\`\`\`\n`;
+        // usage
+        if (item.usage) {
+          readMe += "### usage\n";
+          readMe += `\`\`\`js\n${jsFormat(
+            `import ${item.title} from "@letea/function/${item.title}";\n${item.usage}`
+          )}\n\`\`\`\n`;
+        }
 
-      // references
-      if (item.references) {
-        readMe += "### references\n";
-        item.references.forEach(reference => {
-          readMe += `- [${reference.title}](${reference.url})\n`;
-        });
-      }
+        // references
+        if (item.references) {
+          readMe += "### references\n";
+          item.references.forEach(reference => {
+            readMe += `- [${reference.title}](${reference.url})\n`;
+          });
+        }
+      });
     });
-  });
 
   const { contents, messages } = await formatFromString(readMe);
   fs.writeFile("README.md", contents, function (err) {
     if (err) return console.log(err);
-    console.log("Hello World > helloworld.txt");
+    console.log("README.md is builded.");
   });
 };
 
