@@ -44,6 +44,19 @@ const main = async () => {
   readMe += "## Install\n";
   readMe += `\`\`\`bash\nnpm install @letea/functions\n\`\`\`\n`;
 
+  // Content
+  readMe += "## Contents\n";
+
+  Object.keys(groupedDocuments)
+    .sort()
+    .forEach(key => {
+      readMe += `### [${key}](#${key.toLowerCase()}-1)\n`;
+
+      groupedDocuments[key].forEach(item => {
+        readMe += `- [${item.title}](#${item.title.toLowerCase()})\n`;
+      });
+    });
+
   // Functions
   Object.keys(groupedDocuments)
     .sort()
