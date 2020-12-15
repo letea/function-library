@@ -370,10 +370,6 @@ checkIsBrowser();
 
 ```
 
-### notes
-
-* Only work on browsers.
-
 ### references
 
 * [isBrowser - 30 seconds of code](https://www.30secondsofcode.org/js/s/is-browser)
