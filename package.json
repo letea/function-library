@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "test:output": "jest --json --outputFile=.jest-test-results.json"
+    "test:output": "jest --json --outputFile=.jest-test-results.json",
+    "readme": "node .readme"
   },
   "author": "letea",
   "license": "ISC",
