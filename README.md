@@ -10,6 +10,118 @@ A function library.
 npm install @letea/functions
 ```
 
+## Contents
+
+### [Array](#array-1)
+
+* [checkIsArray](#checkisarray)
+* [checkIsArrayEmpty](#checkisarrayempty)
+* [getDuplicateValuesFromArray](#getduplicatevaluesfromarray)
+* [getIntersectionArray](#getintersectionarray)
+* [getNextIndexInArray](#getnextindexinarray)
+* [getRandomIndexInArray](#getrandomindexinarray)
+* [getRandomValueInArray](#getrandomvalueinarray)
+* [getReverseArray](#getreversearray)
+* [getShuffleArray](#getshufflearray)
+* [getSortedArray](#getsortedarray)
+* [getTrulyArray](#gettrulyarray)
+* [getUniqueArray](#getuniquearray)
+* [getUniqueValuesFromArray](#getuniquevaluesfromarray)
+
+### [Browser](#browser-1)
+
+* [checkIsBrowser](#checkisbrowser)
+* [checkIsInAppBrowserByFacebookNotLoaded](#checkisinappbrowserbyfacebooknotloaded)
+
+### [Canvas](#canvas-1)
+
+* [checkIsCanvasSupported](#checkiscanvassupported)
+
+### [Function](#function-1)
+
+* [checkIsFunction](#checkisfunction)
+
+### [LocalStorage](#localstorage-1)
+
+* [checkIsLocalStorageSupported](#checkislocalstoragesupported)
+
+### [Number](#number-1)
+
+* [checkIsInteger](#checkisinteger)
+* [checkIsNumber](#checkisnumber)
+* [getRandomNumber](#getrandomnumber)
+
+### [Object](#object-1)
+
+* [checkIsObject](#checkisobject)
+* [checkIsObjectEmpty](#checkisobjectempty)
+* [getObjectValue](#getobjectvalue)
+
+### [String](#string-1)
+
+* [checkIsEmailValid](#checkisemailvalid)
+* [checkIsMobileNumberValid](#checkismobilenumbervalid)
+* [checkIsString](#checkisstring)
+* [getRandomString](#getrandomstring)
+* [getSimpleChinese](#getsimplechinese)
+* [getStringify](#getstringify)
+* [getTraditionalChinese](#gettraditionalchinese)
+
+### [Time](#time-1)
+
+* [getHoursFromMinutes](#gethoursfromminutes)
+* [getHoursFromSeconds](#gethoursfromseconds)
+* [getMillisecondsFromSeconds](#getmillisecondsfromseconds)
+* [getMinutesFromHours](#getminutesfromhours)
+* [getMinutesFromSeconds](#getminutesfromseconds)
+* [getSecondsFromHours](#getsecondsfromhours)
+* [getSecondsFromMilliseconds](#getsecondsfrommilliseconds)
+* [getSecondsFromMinutes](#getsecondsfromminutes)
+
+### [URL](#url-1)
+
+* [checkIsAbsoluteURL](#checkisabsoluteurl)
+* [getCurrentURL](#getcurrenturl)
+* [getDropboxRawFileURL](#getdropboxrawfileurl)
+* [getParametersFromURL](#getparametersfromurl)
+* [getSearchFromParameters](#getsearchfromparameters)
+* [getShareToFacebookLink](#getsharetofacebooklink)
+* [getShareToLineLink](#getsharetolinelink)
+* [getURLWithoutParameters](#geturlwithoutparameters)
+* [getURLWithoutTrackingParameters](#geturlwithouttrackingparameters)
+
+### [User-Agent](#user-agent-1)
+
+* [checkIsAndroid](#checkisandroid)
+* [checkIsChrome](#checkischrome)
+* [checkIsDesktop](#checkisdesktop)
+* [checkIsEdge](#checkisedge)
+* [checkIsFirefox](#checkisfirefox)
+* [checkIsInAppBrowserByFacebook](#checkisinappbrowserbyfacebook)
+* [checkIsInAppBrowserByLine](#checkisinappbrowserbyline)
+* [checkIsInternetExplorer](#checkisinternetexplorer)
+* [checkIsiOS](#checkisios)
+* [checkIsiPad](#checkisipad)
+* [checkIsiPhone](#checkisiphone)
+* [checkIsMac](#checkismac)
+* [checkIsMobile](#checkismobile)
+* [checkIsSafari](#checkissafari)
+* [checkIsSamsungBrowser](#checkissamsungbrowser)
+* [checkIsWindows](#checkiswindows)
+* [getAndroidVersion](#getandroidversion)
+* [getiOSVersion](#getiosversion)
+
+### [Video](#video-1)
+
+* [getVideoType](#getvideotype)
+
+### [Window](#window-1)
+
+* [checkIsClipboardSupported](#checkisclipboardsupported)
+* [checkIsFullscreen](#checkisfullscreen)
+* [checkIsWindowFocused](#checkiswindowfocused)
+* [checkIsWindowLoaded](#checkiswindowloaded)
+
 # Array
 
 ## checkIsArray
