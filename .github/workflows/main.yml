@@ -39,4 +39,5 @@ jobs:
         # uses: actions-go/push@7ad7ce209f2a038e7bca929b7a4c92026363f856
         uses: actions-go/push@v1
         with:
-          commit-message: "Update README.md" 
+          author-name: "Github Actions"
+          commit-message: "README: Update README.md" 
