@@ -7,7 +7,7 @@ const prettier = require("prettier");
 const { formatFromString } = require("@quilicicf/markdown-formatter");
 
 // Documents
-const documents = glob.sync("**/*.doc.js").map(file => {
+const documents = glob.sync("{,!(node_modules)/**/}doc.js").map(file => {
   return require(path.resolve(file));
 });
 
