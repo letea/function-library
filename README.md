@@ -83,6 +83,7 @@ npm install @letea/functions
 * [checkIsAbsoluteURL](#checkisabsoluteurl)
 * [getCurrentURL](#getcurrenturl)
 * [getDropboxRawFileURL](#getdropboxrawfileurl)
+* [getGoogleCloudStorageFile](#getgooglecloudstoragefile)
 * [getParametersFromURL](#getparametersfromurl)
 * [getSearchFromParameters](#getsearchfromparameters)
 * [getShareToFacebookLink](#getsharetofacebooklink)
@@ -1243,6 +1244,27 @@ getDropboxRawFileURL("0xp0v2cm3asbk0h/sample.jpg");
 ### references
 
 * [How to Force a Shared Link to Download or Render - Dropbox](https://help.dropbox.com/files-folders/share/force-download)
+
+## getGoogleCloudStorageFile
+
+Get a file URL that can be linked from Google Cloud Storage.
+
+### arguments
+
+```js
+filePath = ""; // required, the format is "project/filename"
+
+```
+
+### usage
+
+```js
+import getGoogleCloudStorageFile from "@letea/function/getGoogleCloudStorageFile";
+
+getGoogleCloudStorageFile("storybook.letea.me/issue-img-webp.jpg");
+// https://storage.cloud.google.com/storybook.letea.me/issue-img-webp.jpg
+
+```
 
 ## getParametersFromURL
 
