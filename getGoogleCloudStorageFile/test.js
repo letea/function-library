@@ -9,7 +9,7 @@ const testCases = [
     describe: "should return a file url.",
     it: "if argument is a valid path",
     toBe:
-      "https://storage.cloud.google.com/storybook.letea.me/issue-img-webp.jpg",
+      "https://storage.googleapis.com/storybook.letea.me/issue-img-webp.jpg",
     cases: ["storybook.letea.me/issue-img-webp.jpg"]
   },
   {

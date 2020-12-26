@@ -7,7 +7,7 @@ const getGoogleCloudStorageFile = (filePath = "") => {
     return "";
   }
 
-  return `https://storage.cloud.google.com/${filePath}`;
+  return `https://storage.googleapis.com/${filePath}`;
 };
 
 module.exports = getGoogleCloudStorageFile;
