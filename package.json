@@ -1,7 +1,7 @@
 {
   "name": "@letea/functions",
-  "version": "2.5.1",
-  "description": "",
+  "version": "2.5.3",
+  "description": "A function library.",
   "main": "index.js",
   "scripts": {
     "test": "jest",
@@ -31,5 +31,10 @@
     "singleQuote": false,
     "tabWidth": 2,
     "trailingComma": "none"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/IamLeTea/function-library.git"
+  },
+  "homepage": "https://github.com/IamLeTea/function-library"
 }
