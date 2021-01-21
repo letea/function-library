@@ -1262,9 +1262,13 @@ filePath = ""; // required, the format is "project/filename"
 import getGoogleCloudStorageFile from "@letea/function/getGoogleCloudStorageFile";
 
 getGoogleCloudStorageFile("storybook.letea.me/issue-img-webp.jpg");
-// https://storage.cloud.google.com/storybook.letea.me/issue-img-webp.jpg
+// https://storage.googleapis.com/storybook.letea.me/issue-img-webp.jpg
 
 ```
+
+### notes
+
+* Public bucket only
 
 ## getParametersFromURL
 
