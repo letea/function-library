@@ -18,6 +18,7 @@
     "pangu": "^4.0.7"
   },
   "devDependencies": {
+    "@letea/prettier-config": "^0.0.6",
     "@letea/useragents": "^1.0.1",
     "@quilicicf/markdown-formatter": "^3.0.2",
     "eslint": "^7.7.0",
@@ -26,15 +27,7 @@
     "jest": "^26.4.0",
     "prettier": "^2.2.1"
   },
-  "prettier": {
-    "arrowParens": "always",
-    "bracketSpacing": true,
-    "jsxBracketSameLine": false,
-    "semi": true,
-    "singleQuote": false,
-    "tabWidth": 2,
-    "trailingComma": "none"
-  },
+  "prettier": "@letea/prettier-config",
   "repository": {
     "type": "git",
     "url": "https://github.com/IamLeTea/function-library.git"
