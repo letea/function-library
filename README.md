@@ -65,6 +65,7 @@ npm install @letea/functions
 * [getRandomString](#getrandomstring)
 * [getSimpleChinese](#getsimplechinese)
 * [getStringify](#getstringify)
+* [getStringWithSpaceBetweenHalfAndFullWidth](#getstringwithspacebetweenhalfandfullwidth)
 * [getTraditionalChinese](#gettraditionalchinese)
 
 ### [Time](#time-1)
@@ -952,6 +953,31 @@ getStringify([123, 234, undefined, Infinity, NaN]);
 // "[123, 234, undefined, Infinity, NaN]"
 
 ```
+
+## getStringWithSpaceBetweenHalfAndFullWidth
+
+Get a string with space between half and full with characters.
+
+### arguments
+
+```js
+text = ""; // required
+
+```
+
+### usage
+
+```js
+import getStringWithSpaceBetweenHalfAndFullWidth from "@letea/function/getStringWithSpaceBetweenHalfAndFullWidth";
+
+getStringWithSpaceBetweenHalfAndFullWidth("我是很busy，因為我很多things要do");
+// "我是很 busy，因為我很多 things 要 do"
+
+```
+
+### references
+
+* [為什麼你們就是不能加個空格呢？](https://github.com/vinta/pangu.js)
 
 ## getTraditionalChinese
 
