@@ -13,7 +13,7 @@ const testCases = [
     describe: "should return true",
     it: "if userAgent is Internet Explorer browser",
     toBe: true,
-    cases: userAgents.filter(userAgent => {
+    cases: userAgents.filter((userAgent) => {
       return !!userAgent.browser.match(/internet explorer/);
     })
   },
@@ -21,7 +21,7 @@ const testCases = [
     describe: "should return false",
     it: "if userAgent is not Internet Explorer browser",
     toBe: false,
-    cases: userAgents.filter(userAgent => {
+    cases: userAgents.filter((userAgent) => {
       return !userAgent.browser.match(/internet explorer/);
     })
   }

@@ -1,4 +1,4 @@
-const checkIsArray = parameter => {
+const checkIsArray = (parameter) => {
   return Array.isArray(parameter);
 };
 

@@ -17,7 +17,7 @@ const getObjectValue = (props = defaultProps) => {
   try {
     const keyList = keys.split(".");
     let value = object;
-    keyList.forEach(key => {
+    keyList.forEach((key) => {
       const hasArray = key.match(/([a-zA-Z]+)\[([0-9]+)\]/i);
       if (hasArray) {
         const arrayKey = hasArray[1];

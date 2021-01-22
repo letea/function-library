@@ -13,7 +13,7 @@ const testCases = [
     describe: "should return true",
     it: "if userAgent is Mac",
     toBe: true,
-    cases: userAgents.filter(userAgent => {
+    cases: userAgents.filter((userAgent) => {
       return userAgent.os === "macos";
     })
   },
@@ -21,7 +21,7 @@ const testCases = [
     describe: "should return false",
     it: "if userAgent is not Mac",
     toBe: false,
-    cases: userAgents.filter(userAgent => {
+    cases: userAgents.filter((userAgent) => {
       return userAgent.os !== "macos";
     })
   }

@@ -1,7 +1,7 @@
 // local files
 const checkIsArray = require("../checkIsArray");
 
-const getReverseArray = array => {
+const getReverseArray = (array) => {
   if (!checkIsArray(array)) {
     throw new Error("The parameter is not array.");
   }

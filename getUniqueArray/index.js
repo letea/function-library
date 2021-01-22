@@ -1,7 +1,7 @@
 // local files
 const checkIsArray = require("../checkIsArray");
 
-const getUniqueArray = array => {
+const getUniqueArray = (array) => {
   if (!checkIsArray(array)) {
     throw new Error("The parameter is not array.");
   }

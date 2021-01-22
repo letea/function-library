@@ -7,7 +7,7 @@ const setDocumentAttribute = require("../setDocumentAttribute");
 
 const presetDocumentAttribute = () => {
   const attributes = ["fullScreen", "mozFullScreen", "webkitIsFullScreen"];
-  attributes.forEach(attribute => {
+  attributes.forEach((attribute) => {
     setDocumentAttribute({
       attribute,
       value: false

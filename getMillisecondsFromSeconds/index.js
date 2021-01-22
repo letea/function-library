@@ -1,7 +1,7 @@
 // local files
 const checkIsNumber = require("../checkIsNumber");
 
-const getMillisecondsFromSeconds = seconds => {
+const getMillisecondsFromSeconds = (seconds) => {
   if (!checkIsNumber(seconds)) {
     throw new Error(`The parameter is not a number`);
   }

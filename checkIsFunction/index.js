@@ -1,4 +1,4 @@
-const checkIsFunction = parameter => {
+const checkIsFunction = (parameter) => {
   return typeof parameter === "function";
 };
 

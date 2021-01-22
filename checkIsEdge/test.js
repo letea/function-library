@@ -13,7 +13,7 @@ const testCases = [
     describe: "should return true",
     it: "if userAgent is Edge Browser",
     toBe: true,
-    cases: userAgents.filter(userAgent => {
+    cases: userAgents.filter((userAgent) => {
       return userAgent.browser === "edge";
     })
   },
@@ -21,7 +21,7 @@ const testCases = [
     describe: "should return false",
     it: "if userAgent is not Edge Browser",
     toBe: false,
-    cases: userAgents.filter(userAgent => {
+    cases: userAgents.filter((userAgent) => {
       return userAgent.browser !== "edge";
     })
   }

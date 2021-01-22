@@ -1,7 +1,7 @@
 // local files
 const checkIsNumber = require("../checkIsNumber");
 
-const checkIsInteger = value => {
+const checkIsInteger = (value) => {
   if (checkIsNumber(value)) {
     return Number.isInteger(value);
   }

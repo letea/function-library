@@ -13,7 +13,7 @@ const testCases = [
     describe: "should return true",
     it: "if userAgent is Safari Browser",
     toBe: true,
-    cases: userAgents.filter(userAgent => {
+    cases: userAgents.filter((userAgent) => {
       return userAgent.browser === "safari";
     })
   },
@@ -21,7 +21,7 @@ const testCases = [
     describe: "should return false",
     it: "if userAgent is not Safari Browser",
     toBe: false,
-    cases: userAgents.filter(userAgent => {
+    cases: userAgents.filter((userAgent) => {
       return userAgent.browser !== "safari";
     })
   }

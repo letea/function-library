@@ -1,7 +1,7 @@
 // local files
 const checkIsObject = require("../checkIsObject");
 
-const checkIsObjectEmpty = object => {
+const checkIsObjectEmpty = (object) => {
   if (!checkIsObject(object)) {
     throw new Error(`The parameter is not an object.`);
   }

@@ -13,7 +13,7 @@ const testCases = [
     describe: "should return true",
     it: "if userAgent is Desktop",
     toBe: true,
-    cases: userAgents.filter(userAgent => {
+    cases: userAgents.filter((userAgent) => {
       return !!userAgent.os.match(/(macos)|(windows)/i);
     })
   },
@@ -21,7 +21,7 @@ const testCases = [
     describe: "should return false",
     it: "if userAgent is not Desktop",
     toBe: false,
-    cases: userAgents.filter(userAgent => {
+    cases: userAgents.filter((userAgent) => {
       return !userAgent.os.match(/(macos)|(windows)/i);
     })
   }

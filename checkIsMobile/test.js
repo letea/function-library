@@ -13,7 +13,7 @@ const testCases = [
     describe: "should return true",
     it: "if userAgent is mobile",
     toBe: true,
-    cases: userAgents.filter(userAgent => {
+    cases: userAgents.filter((userAgent) => {
       return !!userAgent.os.match(/android|ios/g);
     })
   },
@@ -21,7 +21,7 @@ const testCases = [
     describe: "should return false",
     it: "if userAgent is not mobile",
     toBe: false,
-    cases: userAgents.filter(userAgent => {
+    cases: userAgents.filter((userAgent) => {
       return !userAgent.os.match(/android|ios/g);
     })
   }

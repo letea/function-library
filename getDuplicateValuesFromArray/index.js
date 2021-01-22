@@ -8,9 +8,9 @@ const getDuplicateValuesFromArray = (array = []) => {
   }
 
   const duplicateValues = [];
-  array.forEach(item => {
+  array.forEach((item) => {
     let count = 0;
-    array.forEach(otherItem => {
+    array.forEach((otherItem) => {
       if (item === otherItem) {
         count += 1;
       }

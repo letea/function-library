@@ -3,7 +3,7 @@ const defaultProps = {
   value: ""
 };
 
-const setDocumentAttribute = props => {
+const setDocumentAttribute = (props) => {
   if (!window || !document) {
     throw new Error("No window or document founded.");
   }

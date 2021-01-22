@@ -4,7 +4,7 @@ const getiOSVersion = () => {
 
   if (match !== undefined && match !== null) {
     version = [match[1], match[2], match[3] || ""];
-    version = version.filter(number => {
+    version = version.filter((number) => {
       return number !== "";
     });
     return version.join(".");

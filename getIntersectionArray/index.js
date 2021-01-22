@@ -19,7 +19,7 @@ const getIntersectionArray = (props = defaultProps) => {
     return [];
   }
 
-  return [...new Set(array1)].filter(item => array2.includes(item));
+  return [...new Set(array1)].filter((item) => array2.includes(item));
 };
 
 module.exports = getIntersectionArray;

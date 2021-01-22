@@ -1,4 +1,4 @@
-const checkIsObject = parameter => {
+const checkIsObject = (parameter) => {
   return (
     typeof parameter === "object" &&
     parameter !== null &&

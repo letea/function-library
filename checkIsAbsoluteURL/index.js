@@ -1,4 +1,4 @@
-const checkIsAbsoluteURL = url => {
+const checkIsAbsoluteURL = (url) => {
   return /^[a-z][a-z0-9+.-]*:/.test(url);
 };
 

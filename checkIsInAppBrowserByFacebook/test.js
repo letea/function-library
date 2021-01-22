@@ -13,7 +13,7 @@ const testCases = [
     describe: "should return true",
     it: "if userAgent is InApp Browser by Facebook",
     toBe: true,
-    cases: userAgents.filter(userAgent => {
+    cases: userAgents.filter((userAgent) => {
       return userAgent.browser === "facebook";
     })
   },
@@ -21,7 +21,7 @@ const testCases = [
     describe: "should return false",
     it: "if userAgent is not InApp Browser By Facebook",
     toBe: false,
-    cases: userAgents.filter(userAgent => {
+    cases: userAgents.filter((userAgent) => {
       return userAgent.browser !== "facebook";
     })
   }

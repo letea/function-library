@@ -15,10 +15,10 @@ const runTest = ({ testCases, handler }) => {
     return;
   }
 
-  testCases.forEach(testCase => {
+  testCases.forEach((testCase) => {
     describe(testCase.describe, () => {
       if (testCase.cases) {
-        testCase.cases.forEach(item => {
+        testCase.cases.forEach((item) => {
           it(`${testCase.it} (${JSON.stringify(item)})`, () => {
             runHandler({ testCase, item, handler });
           });

@@ -12,7 +12,7 @@ const testCases = [
   {
     describe: "should return true",
     it: "if userAgent is Android browser",
-    cases: userAgents.filter(userAgent => {
+    cases: userAgents.filter((userAgent) => {
       return userAgent.os === "android";
     }),
     handler: ({ item }) => {
@@ -23,7 +23,7 @@ const testCases = [
   {
     describe: "should return false",
     it: "if userAgent is not Android browser",
-    cases: userAgents.filter(userAgent => {
+    cases: userAgents.filter((userAgent) => {
       return userAgent.os !== "android";
     }),
     handler: ({ item }) => {

@@ -1,4 +1,4 @@
-const checkIsNumber = parameter => {
+const checkIsNumber = (parameter) => {
   return (
     typeof parameter === "number" &&
     !Number.isNaN(parameter) &&

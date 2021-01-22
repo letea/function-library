@@ -27,7 +27,9 @@
     "prettier": "^2.2.1"
   },
   "prettier": {
-    "arrowParens": "avoid",
+    "arrowParens": "always",
+    "bracketSpacing": true,
+    "jsxBracketSameLine": false,
     "semi": true,
     "singleQuote": false,
     "tabWidth": 2,

@@ -16,7 +16,7 @@ const getParametersFromURL = (url = "") => {
   const parameterStrings = searchString.split("&");
   let parameters = {};
 
-  parameterStrings.forEach(parameterString => {
+  parameterStrings.forEach((parameterString) => {
     const [key, value] = parameterString.split("=");
     if (key && value) {
       parameters[key] = decodeURI(value);

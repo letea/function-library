@@ -13,7 +13,7 @@ const testCases = [
     describe: "should return true",
     it: "if userAgent is iPad",
     toBe: true,
-    cases: userAgents.filter(userAgent => {
+    cases: userAgents.filter((userAgent) => {
       return !!userAgent.device.match(/ipad/g);
     })
   },
@@ -21,7 +21,7 @@ const testCases = [
     describe: "should return false",
     it: "if userAgent is not iPad",
     toBe: false,
-    cases: userAgents.filter(userAgent => {
+    cases: userAgents.filter((userAgent) => {
       return !userAgent.device.match(/ipad/g);
     })
   }

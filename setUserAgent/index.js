@@ -1,4 +1,4 @@
-const setUserAgent = value => {
+const setUserAgent = (value) => {
   if (!window || !navigator) {
     throw new Error("No window or navigator founded.");
   }

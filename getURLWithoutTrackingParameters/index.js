@@ -35,7 +35,7 @@ const getURLWithoutTrackingParameters = (url = "") => {
   const urlWithoutParameters = getURLWithoutParameters(url);
   const parameters = getParametersFromURL(url);
 
-  Object.keys(parameters).forEach(key => {
+  Object.keys(parameters).forEach((key) => {
     if (trackingKeys.includes(key)) {
       delete parameters[key];
     }

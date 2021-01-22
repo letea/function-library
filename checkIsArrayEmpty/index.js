@@ -1,7 +1,7 @@
 // local files
 const checkIsArray = require("../checkIsArray");
 
-const checkIsArrayEmpty = array => {
+const checkIsArrayEmpty = (array) => {
   if (!checkIsArray(array)) {
     throw new Error(`The parameter is not an array.`);
   }

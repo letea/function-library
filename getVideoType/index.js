@@ -1,7 +1,7 @@
 // local files
 const checkIsString = require("../checkIsString");
 
-const getVideoType = src => {
+const getVideoType = (src) => {
   if (!checkIsString(src)) {
     throw new Error("getVideoType: src is not string");
   }

@@ -3,7 +3,7 @@ const checkIsNumber = require("../checkIsNumber");
 const getMinutesFromHours = require("../getMinutesFromHours");
 const getSecondsFromMinutes = require("../getSecondsFromMinutes");
 
-const getSecondsFromHours = hours => {
+const getSecondsFromHours = (hours) => {
   if (!checkIsNumber(hours)) {
     throw new Error(`The parameter is not a number`);
   }
