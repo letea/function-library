@@ -7,6 +7,7 @@ const getSearchFromParameters = require("../getSearchFromParameters");
 
 const trackingKeys = [
   // Google
+  "gclid",
   "utm_campaign",
   "utm_content",
   "utm_medium",

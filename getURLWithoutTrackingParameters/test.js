@@ -26,7 +26,7 @@ const testCases = [
     it: "if the argument is valid",
     toBe: "http://google.com/?a=123",
     cases: [
-      "http://google.com/?a=123&utm_source=value&utm_medium=value&utm_campaign=value&utm_term=value&utm_content=value"
+      "http://google.com/?a=123&utm_source=value&utm_medium=value&utm_campaign=value&utm_term=value&utm_content=value&gclid=value"
     ]
   }
 ];
