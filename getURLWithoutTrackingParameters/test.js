@@ -18,7 +18,7 @@ const testCases = [
     it: "if the argument is valid",
     toBe: "http://facebook.com/",
     cases: [
-      "http://facebook.com/?ad_id=value&adset_id=value&campaign_id=value&ad_name=value&adset_name=value&campaign_name=value&placement=value&site_source_name=value"
+      "http://facebook.com/?ad_id=value&adset_id=value&campaign_id=value&ad_name=value&adset_name=value&campaign_name=value&placement=value&site_source_name=value&fbclid=value"
     ]
   },
   {
