@@ -49,6 +49,7 @@ npm install @letea/functions
 
 * [checkIsInteger](#checkisinteger)
 * [checkIsNumber](#checkisnumber)
+* [getFloatNumber](#getfloatnumber)
 * [getRandomNumber](#getrandomnumber)
 
 ### [Object](#object-1)
@@ -628,6 +629,33 @@ checkIsNumber(NaN);
 
 checkIsNumber(Infinity);
 // false
+
+```
+
+## getFloatNumber
+
+Get a float number with fixed option.
+
+### arguments
+
+```js
+arguments = {
+  number: 0, // required.
+  fixed: 0, // optional.
+};
+
+```
+
+### usage
+
+```js
+import getFloatNumber from "@letea/function/getFloatNumber";
+
+getFloatNumber({
+  number: 3.1415926535,
+  fixed: 5,
+});
+// 3.14159
 
 ```
 
