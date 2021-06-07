@@ -1487,12 +1487,12 @@ getURLWithoutTrackingParameters(
 // "http://google.com/"
 
 getURLWithoutTrackingParameters(
-  "http://facebook.com/?ad_id=value&adset_id=value&campaign_id=value&ad_name=value&adset_name=value&campaign_name=value&placement=value&site_source_name=value"
+  "http://facebook.com/?ad_id=value&adset_id=value&campaign_id=value&ad_name=value&adset_name=value&campaign_name=value&placement=value&site_source_name=value&fclid=value"
 );
 // "http://facebook.com/"
 
 getURLWithoutTrackingParameters(
-  "http://google.com/?a=123&utm_source=value&utm_medium=value&utm_campaign=value&utm_term=value&utm_content=value"
+  "http://google.com/?a=123&utm_source=value&utm_medium=value&utm_campaign=value&utm_term=value&utm_content=value&gclid=value"
 );
 // "http://google.com/?a=123"
 

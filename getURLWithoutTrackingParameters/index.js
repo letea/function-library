@@ -7,18 +7,20 @@ const getSearchFromParameters = require("../getSearchFromParameters");
 
 const trackingKeys = [
   // Google
-  "utm_source",
-  "utm_medium",
+  "gclid",
   "utm_campaign",
-  "utm_term",
   "utm_content",
+  "utm_medium",
+  "utm_source",
+  "utm_term",
   // Facebook
   "ad_id",
-  "adset_id",
-  "campaign_id",
   "ad_name",
+  "adset_id",
   "adset_name",
+  "campaign_id",
   "campaign_name",
+  "fbclid",
   "placement",
   "site_source_name"
 ];
