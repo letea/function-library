@@ -49,7 +49,7 @@ npm install @letea/functions
 
 * [checkIsInteger](#checkisinteger)
 * [checkIsNumber](#checkisnumber)
-* [getFloatNumber](#getfloatnumber)
+* [getFixedNumber](#getfixednumber)
 * [getRandomNumber](#getrandomnumber)
 
 ### [Object](#object-1)
@@ -632,7 +632,7 @@ checkIsNumber(Infinity);
 
 ```
 
-## getFloatNumber
+## getFixedNumber
 
 Get a float number with fixed option.
 
@@ -649,9 +649,9 @@ arguments = {
 ### usage
 
 ```js
-import getFloatNumber from "@letea/function/getFloatNumber";
+import getFixedNumber from "@letea/function/getFixedNumber";
 
-getFloatNumber({
+getFixedNumber({
   number: 3.1415926535,
   fixed: 5,
 });
