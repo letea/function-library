@@ -6,7 +6,7 @@ const defaultProps = {
   fixed: 0
 };
 
-const getFloatNumber = (props = defaultProps) => {
+const getFixedNumber = (props = defaultProps) => {
   const { number, fixed } = Object.assign({}, defaultProps, props);
 
   if (!checkIsNumber(number)) {
@@ -24,4 +24,4 @@ const getFloatNumber = (props = defaultProps) => {
   return Number.parseFloat(fixedNumber, 10);
 };
 
-module.exports = getFloatNumber;
+module.exports = getFixedNumber;

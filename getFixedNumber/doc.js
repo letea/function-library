@@ -1,5 +1,5 @@
 module.exports = {
-  title: "getFloatNumber",
+  title: "getFixedNumber",
   description: "Get a float number with fixed option.",
   arguments: `
     arguments = {
@@ -8,7 +8,7 @@ module.exports = {
     }
   `,
   usage: `
-    getFloatNumber({
+    getFixedNumber({
       number: 3.1415926535,
       fixed: 5
     })
