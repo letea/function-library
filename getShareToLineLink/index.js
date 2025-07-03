@@ -10,4 +10,4 @@ const getShareToLineLink = (props = defaultProps) => {
   }`;
 };
 
-module.exports = getShareToLineLink;
+export default getShareToLineLink;

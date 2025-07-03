@@ -1,5 +1,5 @@
 // local files
-const checkIsArray = require("../checkIsArray");
+import checkIsArray from "../checkIsArray/index.js";
 
 const defaultProps = {
   array1: [],
@@ -22,4 +22,4 @@ const getIntersectionArray = (props = defaultProps) => {
   return [...new Set(array1)].filter((item) => array2.includes(item));
 };
 
-module.exports = getIntersectionArray;
+export default getIntersectionArray;

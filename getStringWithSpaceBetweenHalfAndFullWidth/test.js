@@ -1,8 +1,8 @@
 // local modules - jest
-const runTest = require("../.jest/runTest");
+import runTest from "../.jest/runTest.js";
 
 // local files
-const getStringWithSpaceBetweenHalfAndFullWidth = require("../getStringWithSpaceBetweenHalfAndFullWidth");
+import getStringWithSpaceBetweenHalfAndFullWidth from "../getStringWithSpaceBetweenHalfAndFullWidth/index.js";
 
 const testCases = [
   {
@@ -29,6 +29,5 @@ const testCases = [
 
 runTest({ testCases });
 
-module.exports = {
-  testCases
-};
+export { testCases
+ };

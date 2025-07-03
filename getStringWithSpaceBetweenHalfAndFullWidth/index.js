@@ -1,8 +1,8 @@
 // node module
-const pangu = require("pangu");
+import pangu from "pangu";
 
 // local files
-const checkIsString = require("../checkIsString");
+import checkIsString from "../checkIsString/index.js";
 
 const getStringWithSpaceBetweenHalfAndFullWidth = (text = "") => {
   if (!checkIsString(text)) {
@@ -14,4 +14,4 @@ const getStringWithSpaceBetweenHalfAndFullWidth = (text = "") => {
   return pangu.spacing(text);
 };
 
-module.exports = getStringWithSpaceBetweenHalfAndFullWidth;
+export default getStringWithSpaceBetweenHalfAndFullWidth;

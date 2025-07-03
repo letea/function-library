@@ -6,4 +6,4 @@ const checkIsInAppBrowserByFacebook = () => {
   return !!navigator.userAgent.match(/line/i);
 };
 
-module.exports = checkIsInAppBrowserByFacebook;
+export default checkIsInAppBrowserByFacebook;

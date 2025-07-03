@@ -1,8 +1,8 @@
 // local modules - jest
-const runTest = require("../.jest/runTest");
+import runTest from "../.jest/runTest.js";
 
 // local files
-const checkIsEmailValid = require("../checkIsEmailValid");
+import checkIsEmailValid from "../checkIsEmailValid/index.js";
 
 const testCases = [
   {
@@ -30,7 +30,6 @@ const handler = ({ testCase, item }) => {
 
 runTest({ testCases, handler });
 
-module.exports = {
-  testCases,
+export { testCases,
   handler
-};
+ };

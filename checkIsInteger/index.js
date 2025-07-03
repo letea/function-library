@@ -1,5 +1,5 @@
 // local files
-const checkIsNumber = require("../checkIsNumber");
+import checkIsNumber from "../checkIsNumber/index.js";
 
 const checkIsInteger = (value) => {
   if (checkIsNumber(value)) {
@@ -8,4 +8,4 @@ const checkIsInteger = (value) => {
   return false;
 };
 
-module.exports = checkIsInteger;
+export default checkIsInteger;

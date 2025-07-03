@@ -1,5 +1,5 @@
 // local files
-const checkIsArray = require("../checkIsArray");
+import checkIsArray from "../checkIsArray/index.js";
 
 const getReverseArray = (array) => {
   if (!checkIsArray(array)) {
@@ -9,4 +9,4 @@ const getReverseArray = (array) => {
   return array.reverse();
 };
 
-module.exports = getReverseArray;
+export default getReverseArray;

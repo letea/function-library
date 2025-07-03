@@ -1,5 +1,5 @@
 // local files
-const checkIsArray = require("../checkIsArray");
+import checkIsArray from "../checkIsArray/index.js";
 
 const getUniqueValuesFromArray = (array = []) => {
   if (!checkIsArray(array)) {
@@ -21,4 +21,4 @@ const getUniqueValuesFromArray = (array = []) => {
   return uniqueValues;
 };
 
-module.exports = getUniqueValuesFromArray;
+export default getUniqueValuesFromArray;

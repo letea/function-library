@@ -1,8 +1,8 @@
 // local modules - jest
-const runTest = require("../.jest/runTest");
+import runTest from "../.jest/runTest.js";
 
 // local files
-const getNextIndexInArray = require("../getNextIndexInArray");
+import getNextIndexInArray from "../getNextIndexInArray/index.js";
 
 const exampleArray = ["a", "b", "c", "d", "e"];
 
@@ -62,6 +62,5 @@ const testCases = [
 
 runTest({ testCases });
 
-module.exports = {
-  testCases
-};
+export { testCases
+ };

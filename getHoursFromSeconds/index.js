@@ -1,7 +1,7 @@
 // local files
-const checkIsNumber = require("../checkIsNumber");
-const getMinutesFromSeconds = require("../getMinutesFromSeconds");
-const getHoursFromMinutes = require("../getHoursFromMinutes");
+import checkIsNumber from "../checkIsNumber/index.js";
+import getMinutesFromSeconds from "../getMinutesFromSeconds/index.js";
+import getHoursFromMinutes from "../getHoursFromMinutes/index.js";
 
 const getHoursFromSeconds = (seconds) => {
   if (!checkIsNumber(seconds)) {
@@ -13,4 +13,4 @@ const getHoursFromSeconds = (seconds) => {
   return getHoursFromMinutes(minutes);
 };
 
-module.exports = getHoursFromSeconds;
+export default getHoursFromSeconds;

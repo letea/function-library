@@ -2,7 +2,7 @@ const checkIsAbsoluteURL = (url) => {
   return /^[a-z][a-z0-9+.-]*:/.test(url);
 };
 
-module.exports = checkIsAbsoluteURL;
+export default checkIsAbsoluteURL;
 
 /*
   References:

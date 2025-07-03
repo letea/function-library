@@ -1,4 +1,4 @@
 // local files
-const checkIsInAppBrowserByFacebookNotLoaded = require("../checkIsInAppBrowserByFacebookNotLoaded");
+import checkIsInAppBrowserByFacebookNotLoaded from "../checkIsInAppBrowserByFacebookNotLoaded/index.js";
 
 test.todo("mock document, window size and screen size");

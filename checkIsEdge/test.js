@@ -2,11 +2,11 @@
 const userAgents = require("@letea/useragents");
 
 // local modules - jest
-const runTest = require("../.jest/runTest");
+import runTest from "../.jest/runTest.js";
 
 // local files
-const checkIsEdge = require("../checkIsEdge");
-const setUserAgent = require("../setUserAgent");
+import checkIsEdge from "../checkIsEdge/index.js";
+import setUserAgent from "../setUserAgent/index.js";
 
 const testCases = [
   {
@@ -34,7 +34,6 @@ const handler = ({ testCase, item }) => {
 
 runTest({ testCases, handler });
 
-module.exports = {
-  testCases,
+export { testCases,
   handler
-};
+ };

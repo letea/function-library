@@ -6,4 +6,4 @@ const checkIsAndroid = () => {
   return !!navigator.userAgent.match(/android/i);
 };
 
-module.exports = checkIsAndroid;
+export default checkIsAndroid;

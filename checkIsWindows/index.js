@@ -6,4 +6,4 @@ const checkIsWindows = () => {
   return !!navigator.userAgent.match(/windows/i);
 };
 
-module.exports = checkIsWindows;
+export default checkIsWindows;

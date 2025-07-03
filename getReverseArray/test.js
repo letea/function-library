@@ -1,8 +1,8 @@
 // local modules - jest
-const runTest = require("../.jest/runTest");
+import runTest from "../.jest/runTest.js";
 
 // local files
-const getReverseArray = require("../getReverseArray");
+import getReverseArray from "../getReverseArray/index.js";
 
 const testCases = [
   {
@@ -19,7 +19,6 @@ const handler = ({ testCase, item }) => {
 
 runTest({ testCases, handler });
 
-module.exports = {
-  testCases,
+export { testCases,
   handler
-};
+ };

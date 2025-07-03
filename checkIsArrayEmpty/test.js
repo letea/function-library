@@ -1,8 +1,8 @@
 // local modules - jest
-const runTest = require("../.jest/runTest");
+import runTest from "../.jest/runTest.js";
 
 // local files
-const checkIsArrayEmpty = require("../checkIsArrayEmpty");
+import checkIsArrayEmpty from "../checkIsArrayEmpty/index.js";
 
 const testCases = [
   {
@@ -35,7 +35,6 @@ const handler = ({ testCase, item }) => {
 
 runTest({ testCases, handler });
 
-module.exports = {
-  testCases,
+export { testCases,
   handler
-};
+ };

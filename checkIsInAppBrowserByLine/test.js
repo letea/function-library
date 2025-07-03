@@ -2,11 +2,11 @@
 const userAgents = require("@letea/useragents");
 
 // local modules - jest
-const runTest = require("../.jest/runTest");
+import runTest from "../.jest/runTest.js";
 
 // local files
-const checkIsInAppBrowserByLine = require("../checkIsInAppBrowserByLine");
-const setUserAgent = require("../setUserAgent");
+import checkIsInAppBrowserByLine from "../checkIsInAppBrowserByLine/index.js";
+import setUserAgent from "../setUserAgent/index.js";
 
 const testCases = [
   {
@@ -34,7 +34,6 @@ const handler = ({ testCase, item }) => {
 
 runTest({ testCases, handler });
 
-module.exports = {
-  testCases,
+export { testCases,
   handler
-};
+ };

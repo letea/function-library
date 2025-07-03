@@ -1,8 +1,8 @@
 // local modules - jest
-const runTest = require("../.jest/runTest");
+import runTest from "../.jest/runTest.js";
 
 // local files
-const getUniqueValuesFromArray = require("../getUniqueValuesFromArray");
+import getUniqueValuesFromArray from "../getUniqueValuesFromArray/index.js";
 
 const testCases = [
   {
@@ -19,7 +19,6 @@ const handler = ({ testCase, item }) => {
 
 runTest({ testCases, handler });
 
-module.exports = {
-  testCases,
+export { testCases,
   handler
-};
+ };

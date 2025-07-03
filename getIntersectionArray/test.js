@@ -1,8 +1,8 @@
 // local modules - jest
-const runTest = require("../.jest/runTest");
+import runTest from "../.jest/runTest.js";
 
 // local files
-const getIntersectionArray = require("../getIntersectionArray");
+import getIntersectionArray from "../getIntersectionArray/index.js";
 
 const testCases = [
   {
@@ -39,6 +39,5 @@ const testCases = [
 
 runTest({ testCases });
 
-module.exports = {
-  testCases
-};
+export { testCases
+ };

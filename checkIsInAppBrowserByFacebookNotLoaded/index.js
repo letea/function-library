@@ -1,5 +1,5 @@
 // local modules - functions
-const checkIsInAppBrowserByFacebook = require("../checkIsInAppBrowserByFacebook");
+import checkIsInAppBrowserByFacebook from "../checkIsInAppBrowserByFacebook/index.js";
 
 const checkIsInAppBrowserByFacebookNotLoaded = () => {
   return (
@@ -7,4 +7,4 @@ const checkIsInAppBrowserByFacebookNotLoaded = () => {
   );
 };
 
-module.exports = checkIsInAppBrowserByFacebookNotLoaded;
+export default checkIsInAppBrowserByFacebookNotLoaded;

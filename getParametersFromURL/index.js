@@ -1,5 +1,5 @@
 // local files
-const checkIsString = require("../checkIsString");
+import checkIsString from "../checkIsString/index.js";
 
 const getParametersFromURL = (url = "") => {
   if (!checkIsString(url)) {
@@ -28,4 +28,4 @@ const getParametersFromURL = (url = "") => {
   return parameters;
 };
 
-module.exports = getParametersFromURL;
+export default getParametersFromURL;

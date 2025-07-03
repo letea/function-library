@@ -2,4 +2,4 @@ const checkIsFunction = (parameter) => {
   return typeof parameter === "function";
 };
 
-module.exports = checkIsFunction;
+export default checkIsFunction;

@@ -1,8 +1,8 @@
 // local modules - jest
-const runTest = require("../.jest/runTest");
+import runTest from "../.jest/runTest.js";
 
 // local files
-const getShareToLineLink = require("../getShareToLineLink");
+import getShareToLineLink from "../getShareToLineLink/index.js";
 
 const testCases = [
   {
@@ -35,6 +35,5 @@ const testCases = [
 
 runTest({ testCases });
 
-module.exports = {
-  testCases
-};
+export { testCases
+ };

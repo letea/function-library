@@ -1,8 +1,8 @@
 // local modules - jest
-const runTest = require("../.jest/runTest");
+import runTest from "../.jest/runTest.js";
 
 // local files
-const getURLWithoutParameters = require("../getURLWithoutParameters");
+import getURLWithoutParameters from "../getURLWithoutParameters/index.js";
 
 const testCases = [
   {
@@ -23,6 +23,5 @@ const testCases = [
 
 runTest({ testCases });
 
-module.exports = {
-  testCases
-};
+export { testCases
+ };

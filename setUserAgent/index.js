@@ -9,4 +9,4 @@ const setUserAgent = (value) => {
   });
 };
 
-module.exports = setUserAgent;
+export default setUserAgent;

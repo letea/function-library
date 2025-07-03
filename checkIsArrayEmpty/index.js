@@ -1,5 +1,5 @@
 // local files
-const checkIsArray = require("../checkIsArray");
+import checkIsArray from "../checkIsArray/index.js";
 
 const checkIsArrayEmpty = (array) => {
   if (!checkIsArray(array)) {
@@ -9,4 +9,4 @@ const checkIsArrayEmpty = (array) => {
   return array.length === 0;
 };
 
-module.exports = checkIsArrayEmpty;
+export default checkIsArrayEmpty;

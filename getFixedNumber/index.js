@@ -1,5 +1,5 @@
 // local files
-const checkIsNumber = require("../checkIsNumber");
+import checkIsNumber from "../checkIsNumber/index.js";
 
 const defaultProps = {
   number: 0,
@@ -24,4 +24,4 @@ const getFixedNumber = (props = defaultProps) => {
   return Number.parseFloat(fixedNumber, 10);
 };
 
-module.exports = getFixedNumber;
+export default getFixedNumber;

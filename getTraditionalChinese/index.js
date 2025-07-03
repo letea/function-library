@@ -2548,7 +2548,7 @@ function getTraditionalChinese(text = "") {
   return text;
 }
 
-module.exports = getTraditionalChinese;
+export default getTraditionalChinese;
 
 /*
   Reference:

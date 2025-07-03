@@ -6,4 +6,4 @@ const checkIsMac = () => {
   return !!navigator.userAgent.match(/macintosh/i);
 };
 
-module.exports = checkIsMac;
+export default checkIsMac;

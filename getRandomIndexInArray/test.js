@@ -1,8 +1,8 @@
 // local modules - jest
-const runTest = require("../.jest/runTest");
+import runTest from "../.jest/runTest.js";
 
 // local files
-const getRandomIndexInArray = require("../getRandomIndexInArray");
+import getRandomIndexInArray from "../getRandomIndexInArray/index.js";
 
 const testCases = [
   {
@@ -39,6 +39,5 @@ const testCases = [
 
 runTest({ testCases });
 
-module.exports = {
-  testCases
-};
+export { testCases
+ };

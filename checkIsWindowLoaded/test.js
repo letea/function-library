@@ -1,4 +1,4 @@
 // local files
-const checkIsWindowLoaded = require("../checkIsWindowLoaded");
+import checkIsWindowLoaded from "../checkIsWindowLoaded/index.js";
 
 test.todo("mock document readyState");

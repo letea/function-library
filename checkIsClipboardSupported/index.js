@@ -1,8 +1,8 @@
 // node modules
-const ClipboardJS = require("clipboard");
+import ClipboardJS from "clipboard";
 
 const checkIsClipboardSupported = () => {
   return ClipboardJS.isSupported();
 };
 
-module.exports = checkIsClipboardSupported;
+export default checkIsClipboardSupported;

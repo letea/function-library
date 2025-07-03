@@ -1,5 +1,5 @@
 // local modules - functions
-const checkIsString = require("../checkIsString");
+import checkIsString from "../checkIsString/index.js";
 
 const getDropboxRawFileURL = (filePath = "") => {
   if (!checkIsString(filePath)) {
@@ -10,4 +10,4 @@ const getDropboxRawFileURL = (filePath = "") => {
   return `https://www.dropbox.com/s/${filePath}?raw=1`;
 };
 
-module.exports = getDropboxRawFileURL;
+export default getDropboxRawFileURL;

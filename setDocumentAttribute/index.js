@@ -16,4 +16,4 @@ const setDocumentAttribute = (props) => {
   });
 };
 
-module.exports = setDocumentAttribute;
+export default setDocumentAttribute;

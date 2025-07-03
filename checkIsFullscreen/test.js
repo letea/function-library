@@ -1,9 +1,9 @@
 // local modules - jest
-const runTest = require("../.jest/runTest");
+import runTest from "../.jest/runTest.js";
 
 // local files
-const checkIsFullscreen = require("../checkIsFullscreen");
-const setDocumentAttribute = require("../setDocumentAttribute");
+import checkIsFullscreen from "../checkIsFullscreen/index.js";
+import setDocumentAttribute from "../setDocumentAttribute/index.js";
 
 const presetDocumentAttribute = () => {
   const attributes = ["fullScreen", "mozFullScreen", "webkitIsFullScreen"];
@@ -63,7 +63,6 @@ const handler = ({ testCase, item }) => {
 
 runTest({ testCases, handler });
 
-module.exports = {
-  testCases,
+export { testCases,
   handler
-};
+ };

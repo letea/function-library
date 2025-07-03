@@ -1,8 +1,8 @@
 // local modules - jest
-const runTest = require("../.jest/runTest");
+import runTest from "../.jest/runTest.js";
 
 // local files
-const getGoogleCloudStorageFile = require("../getGoogleCloudStorageFile");
+import getGoogleCloudStorageFile from "../getGoogleCloudStorageFile/index.js";
 
 const testCases = [
   {
@@ -26,7 +26,6 @@ const handler = ({ testCase, item }) => {
 
 runTest({ testCases, handler });
 
-module.exports = {
-  testCases,
+export { testCases,
   handler
-};
+ };

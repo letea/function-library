@@ -32,4 +32,4 @@ const runTest = ({ testCases, handler }) => {
   });
 };
 
-module.exports = runTest;
+export default runTest;

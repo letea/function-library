@@ -1,9 +1,9 @@
 // local files
-const checkIsString = require("../checkIsString");
-const checkIsObjectEmpty = require("../checkIsObjectEmpty");
-const getURLWithoutParameters = require("../getURLWithoutParameters");
-const getParametersFromURL = require("../getParametersFromURL");
-const getSearchFromParameters = require("../getSearchFromParameters");
+import checkIsString from "../checkIsString/index.js";
+import checkIsObjectEmpty from "../checkIsObjectEmpty/index.js";
+import getURLWithoutParameters from "../getURLWithoutParameters/index.js";
+import getParametersFromURL from "../getParametersFromURL/index.js";
+import getSearchFromParameters from "../getSearchFromParameters/index.js";
 
 const trackingKeys = [
   // Google
@@ -52,4 +52,4 @@ const getURLWithoutTrackingParameters = (url = "") => {
   return `${urlWithoutParameters}${search}`;
 };
 
-module.exports = getURLWithoutTrackingParameters;
+export default getURLWithoutTrackingParameters;

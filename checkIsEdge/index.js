@@ -6,4 +6,4 @@ const checkIsEdge = () => {
   return !!navigator.userAgent.match(/edg/i);
 };
 
-module.exports = checkIsEdge;
+export default checkIsEdge;

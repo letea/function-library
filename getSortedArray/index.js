@@ -1,5 +1,5 @@
 // local files
-const checkIsArray = require("../checkIsArray");
+import checkIsArray from "../checkIsArray/index.js";
 
 const getSortedArray = (array) => {
   if (!checkIsArray(array)) {
@@ -9,4 +9,4 @@ const getSortedArray = (array) => {
   return array.sort();
 };
 
-module.exports = getSortedArray;
+export default getSortedArray;

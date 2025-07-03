@@ -3,6 +3,7 @@
   "version": "2.7.3",
   "description": "A function library.",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "jest",
     "test:output": "jest --json --outputFile=.jest-test-results.json",

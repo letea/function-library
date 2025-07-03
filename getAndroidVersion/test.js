@@ -2,11 +2,11 @@
 const userAgents = require("@letea/useragents");
 
 // local modules - jest
-const runTest = require("../.jest/runTest");
+import runTest from "../.jest/runTest.js";
 
 // local files
-const getAndroidVersion = require("../getAndroidVersion");
-const setUserAgent = require("../setUserAgent");
+import getAndroidVersion from "../getAndroidVersion/index.js";
+import setUserAgent from "../setUserAgent/index.js";
 
 const testCases = [
   {
@@ -35,6 +35,5 @@ const testCases = [
 
 runTest({ testCases });
 
-module.exports = {
-  testCases
-};
+export { testCases
+ };

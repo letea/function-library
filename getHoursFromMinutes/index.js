@@ -1,5 +1,5 @@
 // local files
-const checkIsNumber = require("../checkIsNumber");
+import checkIsNumber from "../checkIsNumber/index.js";
 
 const getHoursFromMinutes = (minutes) => {
   if (!checkIsNumber(minutes)) {
@@ -9,4 +9,4 @@ const getHoursFromMinutes = (minutes) => {
   return minutes / 60;
 };
 
-module.exports = getHoursFromMinutes;
+export default getHoursFromMinutes;

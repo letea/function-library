@@ -1,4 +1,4 @@
 // local files
-const checkIsLocalStorageSupported = require("../checkIsLocalStorageSupported");
+import checkIsLocalStorageSupported from "../checkIsLocalStorageSupported/index.js";
 
 test.todo("mock window & localstorage");

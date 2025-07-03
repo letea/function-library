@@ -1,8 +1,8 @@
 // local files
-const checkIsInAppBrowserByFacebook = require("../checkIsInAppBrowserByFacebook");
-const checkIsInAppBrowserByLine = require("../checkIsInAppBrowserByLine");
-const checkIsEdge = require("../checkIsEdge");
-const checkIsSamsungBrowser = require("../checkIsSamsungBrowser");
+import checkIsInAppBrowserByFacebook from "../checkIsInAppBrowserByFacebook/index.js";
+import checkIsInAppBrowserByLine from "../checkIsInAppBrowserByLine/index.js";
+import checkIsEdge from "../checkIsEdge/index.js";
+import checkIsSamsungBrowser from "../checkIsSamsungBrowser/index.js";
 
 const checkIsChrome = () => {
   if (!window || !navigator) {
@@ -21,4 +21,4 @@ const checkIsChrome = () => {
   return !!navigator.userAgent.match(/chrome|crios/i);
 };
 
-module.exports = checkIsChrome;
+export default checkIsChrome;

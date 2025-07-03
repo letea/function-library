@@ -1,5 +1,5 @@
 // local modules - functions
-const checkIsString = require("../checkIsString");
+import checkIsString from "../checkIsString/index.js";
 
 const getGoogleCloudStorageFile = (filePath = "") => {
   if (!checkIsString(filePath)) {
@@ -10,4 +10,4 @@ const getGoogleCloudStorageFile = (filePath = "") => {
   return `https://storage.googleapis.com/${filePath}`;
 };
 
-module.exports = getGoogleCloudStorageFile;
+export default getGoogleCloudStorageFile;

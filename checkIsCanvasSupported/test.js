@@ -1,4 +1,4 @@
 // local files
-const checkIsCanvasSupported = require("../checkIsCanvasSupported");
+import checkIsCanvasSupported from "../checkIsCanvasSupported/index.js";
 
 test.todo("mock document");

@@ -6,3 +6,5 @@ const checkIsLocalStorageSupported = () => {
     typeof localStorage.removeItem === "function"
   );
 };
+
+export default checkIsLocalStorageSupported;

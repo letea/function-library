@@ -6,4 +6,4 @@ const checkIsObject = (parameter) => {
   );
 };
 
-module.exports = checkIsObject;
+export default checkIsObject;

@@ -22,4 +22,4 @@ const getNextIndexInArray = (props = defaultProps) => {
   return index + 1;
 };
 
-module.exports = getNextIndexInArray;
+export default getNextIndexInArray;

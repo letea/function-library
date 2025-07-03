@@ -6,4 +6,4 @@ const checkIsNumber = (parameter) => {
   );
 };
 
-module.exports = checkIsNumber;
+export default checkIsNumber;

@@ -1,5 +1,5 @@
 // local files
-const checkIsArray = require("../checkIsArray");
+import checkIsArray from "../checkIsArray/index.js";
 
 function getShuffleArray(array = []) {
   if (!checkIsArray(array)) {
@@ -14,4 +14,4 @@ function getShuffleArray(array = []) {
   return array;
 }
 
-module.exports = getShuffleArray;
+export default getShuffleArray;

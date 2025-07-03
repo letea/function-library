@@ -1,5 +1,5 @@
 // local files
-const checkIsObject = require("../checkIsObject");
+import checkIsObject from "../checkIsObject/index.js";
 
 const checkIsObjectEmpty = (object) => {
   if (!checkIsObject(object)) {
@@ -9,4 +9,4 @@ const checkIsObjectEmpty = (object) => {
   return Object.keys(object).length === 0;
 };
 
-module.exports = checkIsObjectEmpty;
+export default checkIsObjectEmpty;

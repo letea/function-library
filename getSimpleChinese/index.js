@@ -2913,7 +2913,7 @@ function getSimpleChinese(text = "") {
   return text;
 }
 
-module.exports = getSimpleChinese;
+export default getSimpleChinese;
 
 /*
   Reference:

@@ -1,5 +1,5 @@
 // local files
-const checkIsArray = require("../checkIsArray");
+import checkIsArray from "../checkIsArray/index.js";
 
 const getUniqueArray = (array) => {
   if (!checkIsArray(array)) {
@@ -9,7 +9,7 @@ const getUniqueArray = (array) => {
   return [...new Set(array)];
 };
 
-module.exports = getUniqueArray;
+export default getUniqueArray;
 
 /*
   Reference:

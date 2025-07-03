@@ -9,4 +9,4 @@ const checkIsiPad = () => {
   );
 };
 
-module.exports = checkIsiPad;
+export default checkIsiPad;

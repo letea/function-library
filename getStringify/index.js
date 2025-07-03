@@ -1,8 +1,8 @@
 // node modules
-const checkIsArray = require("../checkIsArray");
-const checkIsObject = require("../checkIsObject");
-const checkIsString = require("../checkIsString");
-const checkIsFunction = require("../checkIsFunction");
+import checkIsArray from "../checkIsArray/index.js";
+import checkIsObject from "../checkIsObject/index.js";
+import checkIsString from "../checkIsString/index.js";
+import checkIsFunction from "../checkIsFunction/index.js";
 
 function getStringifyFromObject(parameter = {}) {
   let result = "";
@@ -73,4 +73,4 @@ function getStringify(parameter) {
   }
 }
 
-module.exports = getStringify;
+export default getStringify;
